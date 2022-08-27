@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                     var posts=response.body()
                     Toast.makeText(baseContext,"fetched ${posts!!.size}",Toast.LENGTH_LONG)
                         .show()
-                    var adapter=PostRvAdapter(baseContext,posts)
+                    var adapter = PostRvAdapter(baseContext,posts)
                     binding.rvComments.layoutManager = LinearLayoutManager(baseContext)
                     binding.rvComments.adapter=adapter
                 }
